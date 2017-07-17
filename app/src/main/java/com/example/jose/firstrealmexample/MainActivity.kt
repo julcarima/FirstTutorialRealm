@@ -2,7 +2,6 @@ package com.example.jose.firstrealmexample
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -45,7 +44,7 @@ class MainActivity : AppCompatActivity() {
     private fun save_to_database(Name: String, Age: Int) {
         realm!!.executeTransactionAsync({ bgRealm ->
             val person = bgRealm.createObject<Person>(Person::class.java)
-            person.name = Name // este es el error
+            person.name = Name
             person.age = Age
         }, { }) { }
 
