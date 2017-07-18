@@ -18,14 +18,14 @@
             android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="@string/name"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/txtAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Age"
+            android:hint="@string/age"
             android:inputType="text" />
 
     </LinearLayout>
@@ -38,14 +38,14 @@
 
         <Button
             android:id="@+id/btnAdd"
-            android:text="Add"
+            android:text="@string/add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteY="109dp"
             tools:layout_editor_absoluteX="16dp" />
         <Button
             android:id="@+id/btnView"
-            android:text="View"
+            android:text="@string/view"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             tools:layout_editor_absoluteY="109dp"
@@ -55,7 +55,7 @@
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:text="Delete"
+            android:text="@string/delete"
             tools:layout_editor_absoluteX="127dp"
             tools:layout_editor_absoluteY="109dp" />
 
